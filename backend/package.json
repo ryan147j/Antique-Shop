@@ -1,0 +1,27 @@
+{
+  "name": "antique-shop-backend",
+  "version": "1.0.0",
+  "description": "Backend for Antique Shop e-commerce website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "ecommerce",
+    "antiques"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.1",
+    "react-router-dom": "^7.6.0",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
