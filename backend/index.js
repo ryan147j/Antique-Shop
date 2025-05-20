@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const PORT = 5000;
 
@@ -13,6 +14,7 @@ const productRoutes = require('./routes/products');
 const orderRoutes = require('./routes/orders');
 const reviewRoutes = require('./routes/reviews');
 
+app.use(cors());
 app.use(express.json());
 
 // Mount API routes
@@ -23,5 +25,9 @@ app.use('/api/reviews', reviewRoutes);
 
 app.get('/', (req, res) => {
   res.send('Welcome to the Antique Shop backend API!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
 
